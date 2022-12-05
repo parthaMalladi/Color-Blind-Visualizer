@@ -85,7 +85,7 @@ public class GUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == pickFile){
-            JFileChooser j = new JFileChooser("C:\\Users\\parth\\Downloads");
+            JFileChooser j = new JFileChooser("C:\\");
             j.setFileFilter(new FileNameExtensionFilter("PNG Images", "png"));
             j.setFileFilter(new FileNameExtensionFilter("JPEG Image", "jpg"));
             int returnVal = j.showOpenDialog(this.frame);
